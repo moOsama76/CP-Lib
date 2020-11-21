@@ -1,0 +1,8 @@
+Sum from X to Y where: a[y] - a[y-1] = a[y-1] - a[y-2]... = a[x+1] - a[x]
+e.g: [3, 8, 13, 18]
+formula: size*(a[x] + a[y]) / 2)
+
+
+Sum of: a + ak + akk + akkk + ... + ak^n
+e.g: [3, 6, 12, 24]     --->    3 + 3*2 + 3*2*2 + 3*2*2*2 
+formula : (ak^(n+1) - a) / k-1
