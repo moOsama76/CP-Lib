@@ -1,8 +1,8 @@
 Arithmetic progression
 e.g: [3, 8, 13, 18]
-formula: size*(a[x] + a[y]) / 2)
+formula: n * (st + en) / 2
 
 
 Geometric progression
 e.g: [3, 6, 12, 24]     --->    3 + 3*2 + 3*2*2 + 3*2*2*2 
-formula : (ak^(n+1) - a) / k-1
+formula : st * ((1 - r^n) / (1 - r))
