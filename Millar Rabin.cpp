@@ -8,9 +8,9 @@ int mul(int a, int b, int m) {
     return (a * 1LL * b) % m;
 }
 
-int fastPower(int x, int y, int m) {
+int power(int x, int y, int m) {
     if (y == 0) return 1;
-    int temp = fastPower(x, y / 2, m);
+    int temp = power(x, y / 2, m);
     if (y % 2 == 0) return mul(temp, temp, m);
     return mul(mul(x, temp, m), temp, m);
 }
@@ -24,7 +24,7 @@ bool millerTest(int n)
     while (d % 2 == 0)
         d /= 2;
     int a = 2 + rand() % (n - 4);
-    int x = fastPower(a, d, n);
+    int x = power(a, d, n);
     if (x == 1  || x == n-1) return true;
     while (d != n-1)
     {
