@@ -17,7 +17,7 @@ int mul(int a, int b) {
  
 int fastPower(int x, int y) {
     if (y == 0) return 1;
-    int temp = power(x, y / 2);
+    int temp = fastPower(x, y / 2);
     if (y % 2 == 0) return mul(temp, temp);
     return mul(mul(x, temp), temp);
 }
