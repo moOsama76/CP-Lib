@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-int maxNode;
-vector<int> dis(maxNode+1);
-vector<bool> vis(maxNode+1);
+
+vector<int> dis(11);
+vector<bool> vis(11);
 vector<pair<int, int>>adj[11];
 
 void dijkstra(int cur) {
@@ -30,7 +30,7 @@ void dijkstraPreCall(int cur){
 int main()
 {
 
-    int edges;
+    int edges, maxNode;
     cin >> edges >> maxNode;
     while (edges--){
         int u, v, dis;
