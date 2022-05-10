@@ -7,9 +7,9 @@ using namespace __gnu_pbds;
 
 
 typedef tree<
-        string,
+        int,
         null_type,
-        less<string>, // less_equal -> multiset (upperbound, lowerbound are reversed)
+        less<int>, // less_equal -> multiset (upperbound, lowerbound are reversed)
         rb_tree_tag,
         tree_order_statistics_node_update>
         ordered_set;
