@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int n = 1000;
-vector<bool>prime(n+1, 1);
+const int N = 1000;
+vector<bool>prime(N+1, 1);
 
 void sieve(){
-    for (int i = 2; i * i <= n; i++)
+    for (int i = 2; i * i <= N; i++)
     {
         if (prime[i] == true)
-            for (int j = i * i; j <= n; j += i)
+            for (int j = i * i; j <= N; j += i)
                 prime[j] = false;
     }
 }
