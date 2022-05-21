@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-const int m = 1e+9 + 7
+const int m = 1e+9 + 7;
   
 int sum(int a, int b) {
     a = (a % m + m) % m;
