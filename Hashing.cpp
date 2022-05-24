@@ -33,7 +33,7 @@ ll pushBack(ll h, ll x, ll p, char ch){
     return (((h*x)%p)+ch)%p;
 }
  
-ll pushFront(ll h, ll xp, ll p, char ch){ // xp=XP[len]
+ll pushFront(ll h, ll xp, ll p, char ch){ // for xp pass length before pushing
     return (h+(xp*ch)%p)%p;
 }
  
@@ -41,7 +41,7 @@ ll popBack(ll h, ll x, ll p, char ch){
     return (fixMod(h-ch,p)*modInverse(x,p))%p;
 }
  
-ll popFront(ll h, ll xp, ll p, char ch){ // xp=XP[len-1]
+ll popFront(ll h, ll xp, ll p, char ch){ // for xp pass length after popping
     return fixMod(h-((xp*ch)%p),p);
 }
  
