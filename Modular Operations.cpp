@@ -2,7 +2,13 @@
 using namespace std;
 
 const int m = 1e+9 + 7;
-  
+
+int sub(int a, int b) {
+    a = (a % m + m) % m;
+    b = (b % m + m) % m;
+    return (a - 0LL - b + m) % m;
+}
+
 int sum(int a, int b) {
     a = (a % m + m) % m;
     b = (b % m + m) % m;
